@@ -4,7 +4,9 @@ import "react-toastify/dist/ReactToastify.css";
 import { Card, CardBody, Container, Button, Col, Row } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
-import { useState } from "react";
+import { useContext, useState } from "react";
+// import { ThemeContext, ThemeProvider } from "./contexts/ThemeContext";
+// import Product from "./components/Product";
 
 const itemArray = new Array(9).fill("empty");
 
@@ -88,9 +90,31 @@ function App() {
     }
     return false;
   };
+  // const { productList } = useContext(ThemeContext);
+  // console.log(productList);
   return (
     <Container className="p-5">
       <ToastContainer position="bottom-center" />
+      {/*
+        Learning the Context Consumer. Ignore the commented Lines
+      <ThemeProvider>
+        <ThemeContext.Consumer>
+          {(context) => (
+            <Row>
+              <Col md={6} className="offset-md-3">
+                {context.productList.map((value, index) => (
+                  <Card color="warning" key={index}>
+                    <CardBody className="box">
+                      <div style={{ margin: "5px" }}>{value.title}</div>
+                      <div>{value.price}</div>
+                    </CardBody>
+                  </Card>
+                ))}
+              </Col>
+            </Row>
+          )}
+        </ThemeContext.Consumer>
+      </ThemeProvider> */}
       <Row>
         <Col md={6} className="offset-md-3">
           {winMessage ? (
@@ -129,6 +153,17 @@ function App() {
           </div>
         </Col>
       </Row>
+      {/* 
+      
+      Below are the codes for context API. Ignore.
+      
+      <ThemeProvider>
+        <Row>
+          <Col md={6} className="offset-md-3">
+            <Product />
+          </Col>
+        </Row>
+      </ThemeProvider> */}
     </Container>
   );
 }
