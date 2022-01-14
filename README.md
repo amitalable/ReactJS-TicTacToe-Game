@@ -1,9 +1,9 @@
 # Getting Started with Tic Tac Toe Game
 
-This project is created for a Two Player TicTacToe Game using three additional libraries: \
+This project is created for a Two Player TicTacToe Game using three additional libraries: 
 
-1.  react-icons \
-2.  reactstrap \
+1.  react-icons 
+2.  reactstrap 
 3.  react-toastify
 
 ## Available Scripts
