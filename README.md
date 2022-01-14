@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Getting Started with Tic Tac Toe Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is created for a Two Player TicTacToe Game using three additional libraries: \
+
+1.  react-icons \
+2.  reactstrap \
+3.  react-toastify
 
 ## Available Scripts
 
